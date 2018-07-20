@@ -8,6 +8,14 @@ const webpackMerge = require("webpack-merge");
 module.exports = ({mode, presets} = { mode: "production", presets:[] }) => {
     return webpackMerge({     
         mode,
+        module: {
+            rules: [
+                {
+                    test: /\.jpe?g$/,
+                    loader:[  "url-loader" ] 
+                }
+            ]
+        },
         output: {
             filename: "bundle.js"
         },
