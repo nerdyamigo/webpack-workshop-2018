@@ -3,6 +3,7 @@ import { footer } from "./footer";
 import makeButton from "./button";
 import { makeColorStyle } from "./button-styles";
 import "./footer.css"
+import buttonStyles from "./button.css"
 
 const button = makeButton("YAY A BUTTON");
 button.style = makeColorStyle("cyan");
